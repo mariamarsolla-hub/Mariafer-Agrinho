@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável - Agrinho</title>
+    <!-- Tailwind CSS para Estilização Moderna e Responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFFDFD;
+        }
+
+        .font-serif-title {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        /* Cores Customizadas Rosa Claro e Detalhes Sustentáveis */
+        .bg-rose-ultra-light { background-color: #FFF5F6; }
+        .bg-rose-accent { background-color: #FFCCD5; }
+        .text-rose-deep { color: #8A3E4E; }
+        .border-rose-soft { border-color: #FFE3E6; }
+        
+        /* Efeito de transição suave */
+        .transition-all-300 {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Detalhes de Customização de Acordeon sem JS (CSS Puro) */
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        details[open] summary svg {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="text-neutral-800 antialiased">
+
+    <!-- Navegação / Cabeçalho -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-rose-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <!-- Logotipo Vetorial Simbólico (Rosa + Agro) -->
+                <div class="w-10 h-10 bg-[#FFD3DA] rounded-full flex items-center justify-center shadow-sm">
+                    <svg class="w-6 h-6 text-rose-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-neutral-400 font-semibold block leading-none">Projeto Agrinho</span>
+                    <span class="text-lg font-extrabold text-rose-deep tracking-tight">Futuro Sustentável</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-neutral-600">
+                <a href="#o-tema" class="hover:text-rose-deep transition-all-300">O Tema</a>
+                <a href="#pilares" class="hover:text-rose-deep transition-all-300">Pilares do Equilíbrio</a>
+                <a href="#orgaos" class="hover:text-rose-deep transition-all-300">Órgãos de Apoio</a>
+                <a href="#consciencia" class="hover:text-rose-deep transition-all-300">Como Ajudar</a>
+            </nav>
+
+            <div class="flex items-center">
+                <a href="#consciencia" class="bg-[#FFF0F2] text-rose-deep border border-[#FFA6B7] px-4 py-2 rounded-full text-xs font-bold hover:bg-[#FFA6B7] hover:text-white transition-all-300 uppercase tracking-wider">
+                    Conscientize-se
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section / Apresentação -->
+    <section class="relative overflow-hidden py-16 lg:py-28 bg-gradient-to-b from-[#FFF5F6] via-[#FFFDFD] to-white">
+        <!-- Detalhes de Background Abstratos em Rosa Claro -->
+        <div class="absolute top-0 right-0 -mr-16 w-80 h-80 bg-[#FFE5E9] rounded-full filter blur-3xl opacity-60"></div>
+        <div class="absolute bottom-0 left-0 -ml-16 w-96 h-96 bg-[#FFF2F4] rounded-full filter blur-3xl opacity-80"></div>
+
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block px-4 py-1.5 bg-[#FFF0F2] text-rose-deep rounded-full text-xs font-semibold tracking-wider uppercase mb-6 border border-[#FFCCD5]">
+                🌱 Equilíbrio é a nossa maior colheita
+            </span>
+            
+            <h1 class="font-serif-title text-4xl sm:text-5xl lg:text-6xl text-neutral-900 font-bold leading-tight mb-6">
+                Agro forte, futuro sustentável: <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-deep to-[#C95A71]">
+                    Equilíbrio entre produção e meio ambiente
+                </span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10">
+                Como podemos alimentar uma população crescente e, ao mesmo tempo, proteger as nossas florestas, rios e solo? O segredo não está em parar de produzir, mas em produzir de forma inteligente, científica e ética.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#pilares" class="w-full sm:w-auto bg-rose-deep text-white px-8 py-3.5 rounded-xl font-semibold shadow-md hover:bg-[#722F3D] transition-all-300">
+                    Conhecer Soluções Práticas
+                </a>
+                <a href="#orgaos" class="w-full sm:w-auto bg-white border border-rose-soft text-neutral-700 px-8 py-3.5 rounded-xl font-semibold hover:bg-rose-ultra-light transition-all-300">
+                    O Papel do Governo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Alinhamento e Conscientização -->
+    <section id="o-tema" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="font-serif-title text-3xl sm:text-4xl text-neutral-900 font-bold">
+                        Por que o Brasil precisa desse equilíbrio?
+                    </h2>
+                    <p class="text-neutral-600 leading-relaxed">
+                        O agronegócio é um dos pilares da economia brasileira, gerando empregos e garantindo o alimento na mesa de milhões de pessoas em todo o mundo. No entanto, para que esse motor continue forte nas próximas décadas, a preservação ambiental não é um obstáculo, mas sim uma <strong>garantia de sobrevivência</strong>.
+                    </p>
+                    <p class="text-neutral-600 leading-relaxed">
+                        A falta de chuvas, o esgotamento do solo e o aquecimento do planeta prejudicam diretamente o produtor. Cuidar das florestas e das bacias hidrográficas significa garantir que a água continue correndo e a chuva continue caindo sobre as lavouras.
+                    </p>
+                    
+                    <!-- Bloco de Citação Inspiradora -->
+                    <div class="p-6 bg-rose-ultra-light border-l-4 border-[#FFA6B7] rounded-r-xl">
+                        <p class="italic text-rose-deep font-medium">
+                            "A terra não é uma herança de nossos pais, mas um empréstimo para os nossos filhos."
+                        </p>
+                        <span class="text-xs text-neutral-500 block mt-2">— Sabedoria Popular (Temática do Agrinho)</span>
+                    </div>
+                </div>
+
+                <!-- Painel de Dados Ilustrativos e Confiáveis -->
+                <div class="bg-[#FFF8F9] border border-rose-soft rounded-2xl p-8 space-y-6 shadow-sm">
+                    <h3 class="text-lg font-bold text-rose-deep border-b border-rose-soft pb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        Fatos & Dados Científicos (EMBRAPA)
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="p-4 bg-white rounded-xl border border-rose-soft">
+                            <span class="text-3xl font-extrabold text-rose-deep block">+20%</span>
+                            <span class="text-sm font-semibold text-neutral-700 block mt-1">Produtividade no Solo</span>
+                            <span class="text-xs text-neutral-500">Com o uso do Plantio Direto e rotação de culturas corretos.</span>
+                        </div>
+                        
+                        <div class="p-4 bg-white rounded-xl border border-rose-soft">
+                            <span class="text-3xl font-extrabold text-rose-deep block">85%</span>
+                            <span class="text-sm font-semibold text-neutral-700 block mt-1">Preservação no Pantanal</span>
+                            <span class="text-xs text-neutral-500">Mapeado com vegetação original mantida pela ação consciente.</span>
+                        </div>
+
+                        <div class="p-4 bg-white rounded-xl border border-rose-soft">
+                            <span class="text-3xl font-extrabold text-rose-deep block">Zero</span>
+                            <span class="text-sm font-semibold text-neutral-700 block mt-1">Erosão Severa</span>
+                            <span class="text-xs text-neutral-500">Evitada em áreas que integram árvores e pastagens ativamente.</span>
+                        </div>
+
+                        <div class="p-4 bg-white rounded-xl border border-rose-soft">
+                            <span class="text-3xl font-extrabold text-rose-deep block">Milhões</span>
+                            <span class="text-sm font-semibold text-neutral-700 block mt-1">de Hectares</span>
+                            <span class="text-xs text-neutral-500">Recuperados no Brasil através de sistemas sustentáveis da Embrapa.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilares do Equilíbrio / Tecnologias Sustentáveis -->
+    <section id="pilares" class="py-16 bg-[#FFF5F6]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-rose-deep">Inovação e Ciência</span>
+                <h2 class="font-serif-title text-3xl sm:text-4xl text-neutral-900 font-bold mt-2">
+                    Como produzir de forma inteligente e ecológica?
+                </h2>
+                <p class="text-neutral-600 mt-4">
+                    A ciência desenvolvida pela <strong>EMBRAPA</strong> e incentivada pelo <strong>MAPA</strong> prova que existem métodos eficientes para produzir muito sem destruir a natureza.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pilar 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-rose-soft shadow-sm hover:shadow-md transition-all-300">
+                    <div class="w-12 h-12 bg-[#FFF0F2] text-[#C95A71] rounded-xl flex items-center justify-center mb-6">
+                        <!-- Ícone de Planta / Folha -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">ILPF: Integração Total</h3>
+                    <p class="text-neutral-600 text-sm leading-relaxed mb-4">
+                        A Integração Lavoura-Pecuária-Floresta combina árvores, plantações e criação de animais na mesma área. As árvores dão sombra ao gado, protegem contra ventos e absorvem carbono da atmosfera.
+                    </p>
+                    <span class="text-xs font-bold text-rose-deep bg-rose-ultra-light px-2.5 py-1 rounded-md">Origem: Embrapa Florestas</span>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-rose-soft shadow-sm hover:shadow-md transition-all-300">
+                    <div class="w-12 h-12 bg-[#FFF0F2] text-[#C95A71] rounded-xl flex items-center justify-center mb-6">
+                        <!-- Ícone de Solo / Proteção -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Sistema de Plantio Direto</h3>
+                    <p class="text-neutral-600 text-sm leading-relaxed mb-4">
+                        Em vez de revirar a terra, o plantio é feito sobre a palha da colheita anterior. Isso mantém a umidade natural do solo, impede que ele sofra erosão com as chuvas e preserva os nutrientes naturais.
+                    </p>
+                    <span class="text-xs font-bold text-rose-deep bg-rose-ultra-light px-2.5 py-1 rounded-md">Origem: MAPA Práticas Conservacionistas</span>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-rose-soft shadow-sm hover:shadow-md transition-all-300">
+                    <div class="w-12 h-12 bg-[#FFF0F2] text-[#C95A71] rounded-xl flex items-center justify-center mb-6">
+                        <!-- Ícone de Tecnologia / Drones / Sensor -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Agricultura de Precisão</h3>
+                    <p class="text-neutral-600 text-sm leading-relaxed mb-4">
+                        Uso de drones, sensores e satélites para descobrir exatamente onde a plantação precisa de água ou nutrientes. Isso evita desperdício, reduz custos e poupa a natureza de excessos químicos.
+                    </p>
+                    <span class="text-xs font-bold text-rose-deep bg-rose-ultra-light px-2.5 py-1 rounded-md">Pesquisa: Embrapa Agricultura Digital</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem é Quem? O papel de cada órgão -->
+    <section id="orgaos" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-rose-deep">Instituições Brasileiras</span>
+                <h2 class="font-serif-title text-3xl sm:text-4xl text-neutral-900 font-bold mt-2">
+                    Quem cuida do nosso Futuro Verde?
+                </h2>
+                <p class="text-neutral-600 mt-4">
+                    Para alcançar esse equilíbrio, diferentes órgãos do governo trabalham em conjunto, cobrindo tanto a parte da produção produtiva quanto a fiscalização ambiental.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Bloco do Agro -->
+                <div class="border border-rose-soft rounded-2xl p-8 bg-[#FFFDFD] space-y-6">
+                    <div class="flex items-center space-x-3 border-b border-rose-soft pb-4">
+                        <span class="p-2.5 bg-[#FFF0F2] text-rose-deep rounded-lg font-bold text-lg">🌾</span>
+                        <h3 class="text-2xl font-bold text-neutral-900">Foco no Desenvolvimento Agrícola</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-1.5 h-1.5 bg-[#C95A71] rounded-full mt-2"></div>
+                            <div>
+                                <h4 class="font-bold text-neutral-800">MAPA (Ministério da Agricultura e Pecuária)</h4>
+                                <p class="text-sm text-neutral-600 mt-1">
+                                    Promove a competitividade e o avanço científico do campo através do incentivo a novas tecnologias de conservação e financiamento sustentável (como o Plano Safra).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-1.5 h-1.5 bg-[#C95A71] rounded-full mt-2"></div>
+                            <div>
+                                <h4 class="font-bold text-neutral-800">EMBRAPA (Empresa Brasileira de Pesquisa Agropecuária)</h4>
+                                <p class="text-sm text-neutral-600 mt-1">
+                                    Cria soluções, sementes resistentes e metodologias que provam como produzir de forma sustentável, fornecendo suporte científico gratuito para agricultores de todos os portes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco do Meio Ambiente -->
+                <div class="border border-rose-soft rounded-2xl p-8 bg-[#FFFDFD] space-y-6">
+                    <div class="flex items-center space-x-3 border-b border-rose-soft pb-4">
+                        <span class="p-2.5 bg-[#FFF0F2] text-rose-deep rounded-lg font-bold text-lg">🌳</span>
+                        <h3 class="text-2xl font-bold text-neutral-900">Foco na Preservação Ecológica</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-1.5 h-1.5 bg-[#C95A71] rounded-full mt-2"></div>
+                            <div>
+                                <h4 class="font-bold text-neutral-800">MMA (Ministério do Meio Ambiente e Mudança do Clima)</h4>
+                                <p class="text-sm text-neutral-600 mt-1">
+                                    Formula as políticas públicas para combater o desmatamento, protege a biodiversidade dos biomas e estabelece as diretrizes para uma economia de baixo carbono.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-1.5 h-1.5 bg-[#C95A71] rounded-full mt-2"></div>
+                            <div>
+                                <h4 class="font-bold text-neutral-800">IBAMA (Instituto Brasileiro do Meio Ambiente)</h4>
+                                <p class="text-sm text-neutral-600 mt-1">
+                                    Atua como braço de fiscalização essencial. Garante que as leis sejam cumpridas, controla o uso responsável de recursos naturais e combate atividades agrícolas ilegais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão Interativa de Conscientização / Perguntas Frequentes -->
+    <section id="consciencia" class="py-16 bg-[#FFF5F6] border-t border-rose-soft">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-rose-deep">Guia Cidadão</span>
+                <h2 class="font-serif-title text-3xl text-neutral-900 font-bold mt-2">
+                    Dúvidas Comuns sobre o Agro e Meio Ambiente
+                </h2>
+                <p class="text-neutral-600 mt-2">
+                    Clique nas perguntas abaixo para entender como cada um de nós faz parte dessa transformação positiva.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Pergunta 1 -->
+                <details class="bg-white rounded-xl border border-rose-soft overflow-hidden group transition-all-300">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none focus:outline-none">
+                        <span class="font-semibold text-neutral-800 text-base group-hover:text-rose-deep transition-all-300">
+                            1. O desmatamento é realmente necessário para o crescimento do Agro?
+                        </span>
+                        <svg class="w-5 h-5 text-rose-deep transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-sm text-neutral-600 leading-relaxed border-t border-rose-soft pt-4 bg-rose-ultra-light">
+                        <strong>Não!</strong> Dados e mapeamentos da Embrapa mostram que o Brasil possui milhões de hectares de pastagens já degradadas que podem ser convertidas em áreas de lavoura produtiva. Com as tecnologias corretas, é perfeitamente possível dobrar a produção brasileira de alimentos sem derrubar uma única árvore nativa.
+                    </div>
+                </details>
+
+                <!-- Pergunta 2 -->
+                <details class="bg-white rounded-xl border border-rose-soft overflow-hidden group transition-all-300">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none focus:outline-none">
+                        <span class="font-semibold text-neutral-800 text-base group-hover:text-rose-deep transition-all-300">
+                            2. O que é o Código Florestal e o CAR?
+                        </span>
+                        <svg class="w-5 h-5 text-rose-deep transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-sm text-neutral-600 leading-relaxed border-t border-rose-soft pt-4 bg-rose-ultra-light">
+                        O <strong>Código Florestal</strong> exige que toda propriedade rural mantenha uma área de vegetação nativa preservada (chamada de Reserva Legal, que varia de 20% a 80% da fazenda dependendo da região) e proteja margens de rios (Áreas de Preservação Permanente). O <strong>CAR (Cadastro Ambiental Rural)</strong> é o registro público obrigatório que mapeia essas áreas para fiscalização do Ibama.
+                    </div>
+                </details>
+
+                <!-- Pergunta 3 -->
+                <details class="bg-white rounded-xl border border-rose-soft overflow-hidden group transition-all-300">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none focus:outline-none">
+                        <span class="font-semibold text-neutral-800 text-base group-hover:text-rose-deep transition-all-300">
+                            3. Como as pessoas na cidade podem apoiar o agro sustentável?
+                        </span>
+                        <svg class="w-5 h-5 text-rose-deep transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-sm text-neutral-600 leading-relaxed border-t border-rose-soft pt-4 bg-rose-ultra-light">
+                        Consumidores urbanos exercem um poder imenso. Você pode priorizar produtos que possuam selos de sustentabilidade, comprar de cooperativas familiares de sua região, evitar o desperdício de alimentos e se manter informado, rejeitando mitos e fake news sobre os dois lados da discussão.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chamada para Ação / Quiz de Conscientização Simplificado -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-[#FFF0F2] to-[#FFEBEF] rounded-3xl p-8 sm:p-12 border border-[#FFA6B7] relative overflow-hidden">
+                <div class="absolute top-0 right-0 opacity-10 pointer-events-none translate-x-12 -translate-y-12">
+                    <svg class="w-80 h-80" fill="currentColor" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.3,-58.5C53.7,-51.1,67,-42,75,-29.4C83,-16.7,85.7,-0.5,82.8,14.6C79.8,29.7,71.2,43.6,59.8,53.8C48.5,64,34.4,70.5,19.9,73.5C5.4,76.5,-9.5,75.9,-23.7,71.5C-37.9,67.1,-51.5,58.8,-62.4,47.2C-73.4,35.6,-81.8,20.7,-82.7,5.5C-83.6,-9.7,-77,-25.1,-67.7,-37.9C-58.4,-50.8,-46.3,-61.2,-33.1,-68.8C-19.9,-76.3,-5.7,-81.1,5.5,-88.7C16.8,-96.3,33.5,-106.6,40.3,-58.5Z" transform="translate(100 100)" />
+                    </svg>
+                </div>
+                
+                <div class="relative z-10 text-center space-y-6">
+                    <h3 class="font-serif-title text-3xl text-neutral-900 font-bold">
+                        Faça a sua parte no Agrinho!
+                    </h3>
+                    <p class="text-neutral-600 max-w-xl mx-auto">
+                        Leve essa discussão para a sua escola, compartilhe este material com seus amigos e familiares e ajude-nos a plantar hoje a semente de um amanhã onde nossa economia e nossas matas cresçam fortes e juntas.
+                    </p>
+                    <div class="pt-4">
+                        <button onclick="alert('Obrigado por apoiar a causa! Compartilhe o link do site com seus amigos e ajude a semear a consciência sustentável.')" class="bg-rose-deep text-white px-8 py-3.5 rounded-xl font-bold shadow-md hover:bg-[#722F3D] transition-all-300">
+                            📢 Espalhar essa Ideia!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-neutral-900 text-neutral-400 py-12 border-t border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <p class="text-sm">
+                Desenvolvido com carinho para o <strong>Concurso Agrinho 2026</strong>.
+            </p>
+            <p class="text-xs text-neutral-500">
+                Inspirado em informações científicas e dados oficiais do <span class="text-neutral-300">MAPA</span>, <span class="text-neutral-300">EMBRAPA</span>, <span class="text-neutral-300">IBAMA</span> e <span class="text-neutral-300">MMA</span>.
+            </p>
+            <div class="pt-4 border-t border-neutral-800 flex justify-center space-x-6 text-xs text-neutral-600">
+                <span>Agro Sustentável &copy; 2026</span>
+                <span>•</span>
+                <span>Saber e Atuar para Melhorar o Mundo</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
